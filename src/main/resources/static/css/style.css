@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,600&display=swap");
+:root {
+    --red: #ee596f;
+    --yellow: #feb800;
+    --green: #07a787;
+    --purple: #c765d0;
+    --gray: #787878;
+    --gray-light: #eee;
+    --gray-dark: #2e3c54;
+    --font: "Montserrat", sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+a,
+button {
+    cursor: pointer;
+    outline: none;
+}
+
+.sign-up {
+    font-family: var(--font);
+    width: 100%;
+    max-width: 800px;
+    height: 700px;
+    background-color: var(--gray-light);
+    margin: 25px auto;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sign-up_form {
+    background-color: white;
+    width: 80%;
+    height: 70%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 20px 20px 10px rgba(0,0,0,.15);
+}
+
+.sign-up_content {
+    padding: 40px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.sign-up_title {
+    color: var(--gray-dark);
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.sign-up_inp {
+    outline: none;
+    margin-bottom: 20px;
+    padding: 20px 20px 20px 0;
+    border: 0;
+    border-bottom: 1px solid var(--gray-light);
+    font-size: 50px;
+    font-weight: 400;
+    font-family: var(--font);
+}
+.sign-up_buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -20px; /* Ajusta este valor según sea necesario */
+}
+.sign-up_buttons > * {
+    width: calc(50% - 7px);
+    padding: 20px 15px;
+    border: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin: 0 auto;
+    /* margin-bottom: 10px;  Elimina este margen inferior */
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+}
+.circle-red {
+    width: 250px;
+    height: 250px;
+    background-color: var(--red);
+    top: 25px;
+    left: 25px;
+    z-index: 1;
+}
+.circle-yellow {
+    width: 100px;
+    height: 100px;
+    background-color: var(--yellow);
+    top: 50px;
+    left: 230px;
+}
+.circle-green {
+    width: 300px;
+    height: 300px;
+    background-color: var(--green);
+    bottom: 50px;
+    left: 200px;
+    z-index: 2;
+}
+.circle-purple {
+    width: 300px;
+    height: 300px;
+    background-color: var(--purple);
+    bottom: -50px;
+    right: -50px;
+    transform: scale(1.8);
+}
+
+.forgot_password {
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--gray);
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.btn-register {
+    background-color: var(--gray-light);
+    color: var(--gray);
+    margin: 0 auto;
+}
+
+.btn-signin {
+    background-color: var(--gray-dark);
+    color: white;
+    text-align: center; /* Alinea el texto al centro */
+    width: calc(50% - 7px); /* Ancho del 50% con 15px de espacio entre botones */
+    padding: 20px 15px;
+    border: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin: 0 auto; /* Centra el botón */
+}
+
+.btn-back {
+    margin-top: -60px; /* Ajusta este valor según sea necesario para subir el botón */
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 15px; /* Ajusta el relleno según sea necesario */
+    border-radius: 5px; /* Ajusta el radio de borde según sea necesario */
+}

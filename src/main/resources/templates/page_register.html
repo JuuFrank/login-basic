@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="sign-up">
+    <div class="circle circle-red"></div>
+    <div class="circle circle-yellow"></div>
+    <div class="circle circle-green"></div>
+    <div class="circle circle-purple"></div>
+    <form class="sign-up_form" action="/register" method="post">
+        <div class="sign-up_content">
+            <h2 class="sign-up_title">Registration</h2>
+            <input class="sign-up_inp" type="text" name="name" placeholder="Name" required/>
+            <input class="sign-up_inp" type="email" name="correo" placeholder="Email" required/>
+            <input class="sign-up_inp" type="password" name="password" placeholder="Password" required/>
+            <button class="btn btn-signin" type="submit">Sign up</button>
+            <div class="registration-message"></div>
+            <div th:if="${error == 'emailExists'}" class="error-message">
+                <p>Correo electrónico ya registrado. Por favor, usa otro correo.</p>
+        </div>
+    </form>
+</div>
+</body>
+</html>
+
