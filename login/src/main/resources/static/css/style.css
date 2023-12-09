@@ -61,11 +61,11 @@ button {
 }
 .sign-up_inp {
     outline: none;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     padding: 20px 20px 20px 0;
     border: 0;
     border-bottom: 1px solid var(--gray-light);
-    font-size: 11px;
+    font-size: 50px;
     font-weight: 400;
     font-family: var(--font);
 }
@@ -131,6 +131,7 @@ button {
 .btn-register {
     background-color: var(--gray-light);
     color: var(--gray);
+    margin: 0 auto;
 }
 
 .btn-signin {
